@@ -12,3 +12,6 @@ C:\Users\ima pro\Documents\Visual Studio 2015\Projects\WindowsFormsApplication2\
 C:\Users\ima pro\Documents\Visual Studio 2015\Projects\WindowsFormsApplication2\WindowsFormsApplication2\bin\Release\valeoappbeta.pdb
 C:\Users\ima pro\Documents\Visual Studio 2015\Projects\WindowsFormsApplication2\WindowsFormsApplication2\obj\Release\valeoappbeta.exe
 C:\Users\ima pro\Documents\Visual Studio 2015\Projects\WindowsFormsApplication2\WindowsFormsApplication2\obj\Release\valeoappbeta.pdb
+C:\Users\ima pro\Documents\GitHub\rastreabilidad\WindowsFormsApplication2\WindowsFormsApplication2\bin\Release\valeoappbeta.exe.config
+C:\Users\ima pro\Documents\GitHub\rastreabilidad\WindowsFormsApplication2\WindowsFormsApplication2\obj\Release\valeoappbeta.exe
+C:\Users\ima pro\Documents\GitHub\rastreabilidad\WindowsFormsApplication2\WindowsFormsApplication2\obj\Release\valeoappbeta.pdb
