@@ -12,6 +12,23 @@ C:\Users\ima pro\Documents\Visual Studio 2015\Projects\WindowsFormsApplication2\
 C:\Users\ima pro\Documents\Visual Studio 2015\Projects\WindowsFormsApplication2\WindowsFormsApplication2\bin\Release\valeoappbeta.pdb
 C:\Users\ima pro\Documents\Visual Studio 2015\Projects\WindowsFormsApplication2\WindowsFormsApplication2\obj\Release\valeoappbeta.exe
 C:\Users\ima pro\Documents\Visual Studio 2015\Projects\WindowsFormsApplication2\WindowsFormsApplication2\obj\Release\valeoappbeta.pdb
+C:\Users\ima pro\Downloads\rastreabilidad-b09a03ea8f4f97ebf9c04923314b017c1cf2eae6\rastreabilidad-b09a03ea8f4f97ebf9c04923314b017c1cf2eae6\WindowsFormsApplication2\WindowsFormsApplication2\bin\Release\valeoappbeta.exe.config
+C:\Users\ima pro\Downloads\rastreabilidad-b09a03ea8f4f97ebf9c04923314b017c1cf2eae6\rastreabilidad-b09a03ea8f4f97ebf9c04923314b017c1cf2eae6\WindowsFormsApplication2\WindowsFormsApplication2\obj\Release\valeoappbeta.exe
+C:\Users\ima pro\Downloads\rastreabilidad-b09a03ea8f4f97ebf9c04923314b017c1cf2eae6\rastreabilidad-b09a03ea8f4f97ebf9c04923314b017c1cf2eae6\WindowsFormsApplication2\WindowsFormsApplication2\obj\Release\valeoappbeta.pdb
+C:\Users\ima pro\Documents\WindowsFormsApplication2\WindowsFormsApplication2\bin\Release\valeoappbeta.exe.config
+C:\Users\ima pro\Documents\WindowsFormsApplication2\WindowsFormsApplication2\obj\Release\valeoappbeta.exe
+C:\Users\ima pro\Documents\WindowsFormsApplication2\WindowsFormsApplication2\obj\Release\valeoappbeta.pdb
 C:\Users\ima pro\Documents\GitHub\rastreabilidad\WindowsFormsApplication2\WindowsFormsApplication2\bin\Release\valeoappbeta.exe.config
 C:\Users\ima pro\Documents\GitHub\rastreabilidad\WindowsFormsApplication2\WindowsFormsApplication2\obj\Release\valeoappbeta.exe
 C:\Users\ima pro\Documents\GitHub\rastreabilidad\WindowsFormsApplication2\WindowsFormsApplication2\obj\Release\valeoappbeta.pdb
+C:\Users\ima pro\Documents\GitHub\rastreabilidad\WindowsFormsApplication2\WindowsFormsApplication2\bin\Release\valeoappbeta.exe
+C:\Users\ima pro\Documents\GitHub\rastreabilidad\WindowsFormsApplication2\WindowsFormsApplication2\bin\Release\valeoappbeta.pdb
+C:\Users\ima pro\Documents\GitHub\rastreabilidad\WindowsFormsApplication2\WindowsFormsApplication2\bin\Release\MetroFramework.Design.dll
+C:\Users\ima pro\Documents\GitHub\rastreabilidad\WindowsFormsApplication2\WindowsFormsApplication2\bin\Release\MetroFramework.dll
+C:\Users\ima pro\Documents\GitHub\rastreabilidad\WindowsFormsApplication2\WindowsFormsApplication2\bin\Release\MetroFramework.Fonts.dll
+C:\Users\ima pro\Documents\GitHub\rastreabilidad\WindowsFormsApplication2\WindowsFormsApplication2\bin\Release\MySql.Data.dll
+C:\Users\ima pro\Documents\GitHub\rastreabilidad\WindowsFormsApplication2\WindowsFormsApplication2\obj\Release\WindowsFormsApplication2.csprojResolveAssemblyReference.cache
+C:\Users\ima pro\Documents\GitHub\rastreabilidad\WindowsFormsApplication2\WindowsFormsApplication2\obj\Release\WindowsFormsApplication2.Form1.resources
+C:\Users\ima pro\Documents\GitHub\rastreabilidad\WindowsFormsApplication2\WindowsFormsApplication2\obj\Release\WindowsFormsApplication2.Form2.resources
+C:\Users\ima pro\Documents\GitHub\rastreabilidad\WindowsFormsApplication2\WindowsFormsApplication2\obj\Release\WindowsFormsApplication2.Properties.Resources.resources
+C:\Users\ima pro\Documents\GitHub\rastreabilidad\WindowsFormsApplication2\WindowsFormsApplication2\obj\Release\WindowsFormsApplication2.csproj.GenerateResource.Cache

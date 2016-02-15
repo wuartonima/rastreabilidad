@@ -121,5 +121,10 @@ namespace WindowsFormsApplication2
         {
             CloseAllSockets();
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
