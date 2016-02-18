@@ -25,12 +25,13 @@ namespace WindowsFormsApplication2
         private static readonly byte[] _buffer = new byte[_BUFFER_SIZE];
         public static string temp { get; set; }
         int contador = 0;
+        Prosesado logica = new Prosesado();
         #endregion
         public Form1()
         {
             InitializeComponent();
-            Thread com = new Thread(SetupServer);
-            com.Start();
+            SetupServer();
+            
         }
         #region comunicacion
         private void metroButton5_Click(object sender, EventArgs e)
@@ -42,7 +43,7 @@ namespace WindowsFormsApplication2
         {
             IPAddress localAddr = IPAddress.Parse("192.168.0.141");      
             _serverSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-            _serverSocket.Bind(new IPEndPoint(localAddr, _PORT));
+            _serverSocket.Bind(new IPEndPoint(IPAddress.Any, _PORT));
             _serverSocket.Listen(5);
             _serverSocket.BeginAccept(AcceptCallback, null);
         }
@@ -98,10 +99,18 @@ namespace WindowsFormsApplication2
             string text = Encoding.ASCII.GetString(recBuf);///importante
             contador++;
             temp = text.Substring(0,4)+ contador;
-            
-    
-   
-
+            logica.identificar(text);
+            if(logica.prueva && logica.resultado)
+            {
+                byte[] data = Encoding.ASCII.GetBytes("a");
+                current.Send(data);
+            }
+            if (logica.prueva && logica.resultado==false)
+            {
+                byte[] data = Encoding.ASCII.GetBytes("na");
+                current.Send(data);
+            }
+            logica.prueva = false;logica.resultado = false;
             current.BeginReceive(_buffer, 0, _BUFFER_SIZE, SocketFlags.None, ReceiveCallback, current);
         }
 
@@ -110,6 +119,16 @@ namespace WindowsFormsApplication2
         private void timer1_Tick(object sender, EventArgs e)
         {
             prueva.Text = temp;
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

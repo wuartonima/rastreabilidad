@@ -10,7 +10,7 @@ namespace WindowsFormsApplication2
 {
     class baseDatos
     {
-        public string conexion { get; set; }
+        public string conexion {get; set;}
         MySqlConnection con;
         MySqlCommand coman = new MySqlCommand();
 
@@ -44,6 +44,22 @@ namespace WindowsFormsApplication2
             coman.CommandText= "insert into " + tabla + " values( "+valores+")";
             coman.ExecuteReader();
             con.Close();
+        }
+        public string consultarDato(string tabladb, string tipodato, string valor)
+        {
+            con.Open();
+            string dato="";
+
+            coman.CommandText = "SELECT " + tipodato + " FROM " + tabladb + " WHERE " + tipodato + "=" + "'" + valor + "'";
+            MySqlDataReader read;
+            read = coman.ExecuteReader();
+            if (read.Read())
+            {
+                dato = read.GetString(tipodato);
+            }
+            return dato;
+            con.Close();
+           
         }
         
 
