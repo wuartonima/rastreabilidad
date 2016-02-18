@@ -11,3 +11,4 @@ c:\users\ima pro\documents\visual studio 2015\Projects\WindowsFormsApplication2\
 c:\users\ima pro\documents\visual studio 2015\Projects\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.exe
 c:\users\ima pro\documents\visual studio 2015\Projects\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.pdb
 c:\users\ima pro\documents\visual studio 2015\Projects\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\MySql.Data.dll
+C:\Users\ima pro\Documents\GitHub\rastreabilidad\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\valeoappbeta.exe.config

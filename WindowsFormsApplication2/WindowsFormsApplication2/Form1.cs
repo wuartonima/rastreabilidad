@@ -10,11 +10,13 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace WindowsFormsApplication2
 {
     public partial class Form1 : MetroForm
     {
+        #region variables
         baseDatos basedatos = new baseDatos("Database=valeodb;Data Source=localhost;user Id=root;Password=ima1;");
         private static Socket _serverSocket;
         private static readonly List<Socket> _clientSockets = new List<Socket>();
@@ -22,23 +24,21 @@ namespace WindowsFormsApplication2
         private const int _PORT = 2000;
         private static readonly byte[] _buffer = new byte[_BUFFER_SIZE];
         public static string temp { get; set; }
+        int contador = 0;
+        #endregion
         public Form1()
         {
             InitializeComponent();
-            SetupServer();
+            Thread com = new Thread(SetupServer);
+            com.Start();
         }
-
+        #region comunicacion
         private void metroButton5_Click(object sender, EventArgs e)
         {
             Form2 buscar = new Form2();
             buscar.Show();
         }
-
-        private void metroTextBox4_Click(object sender, EventArgs e)
-        {
-
-        }
-        private static void SetupServer()
+        private  void SetupServer()
         {
             IPAddress localAddr = IPAddress.Parse("192.168.0.141");      
             _serverSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
@@ -46,7 +46,7 @@ namespace WindowsFormsApplication2
             _serverSocket.Listen(5);
             _serverSocket.BeginAccept(AcceptCallback, null);
         }
-        private static void CloseAllSockets()
+        private  void CloseAllSockets()
         {
             foreach (Socket socket in _clientSockets)
             {
@@ -57,7 +57,7 @@ namespace WindowsFormsApplication2
             _serverSocket.Close();
         }
 
-        private static void AcceptCallback(IAsyncResult AR)
+        private  void AcceptCallback(IAsyncResult AR)
         {
             Socket socket;
 
@@ -76,7 +76,7 @@ namespace WindowsFormsApplication2
             _serverSocket.BeginAccept(AcceptCallback, null);
         }
 
-        public static void ReceiveCallback(IAsyncResult AR)
+        public void ReceiveCallback(IAsyncResult AR)
         {
             Socket current = (Socket)AR.AsyncState;
             int received;
@@ -96,35 +96,20 @@ namespace WindowsFormsApplication2
             byte[] recBuf = new byte[received];
             Array.Copy(_buffer, recBuf, received);
             string text = Encoding.ASCII.GetString(recBuf);///importante
-            temp = text;
+            contador++;
+            temp = text.Substring(0,4)+ contador;
             
-          if (text.ToLower() == "exit") // Client wants to exit gracefully
-            {
-                // Always Shutdown before closing
-                current.Shutdown(SocketShutdown.Both);
-                current.Close();
-                _clientSockets.Remove(current);
-               
-                return;
-            }
+    
    
 
             current.BeginReceive(_buffer, 0, _BUFFER_SIZE, SocketFlags.None, ReceiveCallback, current);
         }
 
+        #endregion
+
         private void timer1_Tick(object sender, EventArgs e)
         {
             prueva.Text = temp;
-        }
-
-        private void metroButton1_Click(object sender, EventArgs e)
-        {
-            CloseAllSockets();
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -32,3 +32,7 @@ C:\Users\ima pro\Documents\GitHub\rastreabilidad\WindowsFormsApplication2\Window
 C:\Users\ima pro\Documents\GitHub\rastreabilidad\WindowsFormsApplication2\WindowsFormsApplication2\obj\Release\WindowsFormsApplication2.Form2.resources
 C:\Users\ima pro\Documents\GitHub\rastreabilidad\WindowsFormsApplication2\WindowsFormsApplication2\obj\Release\WindowsFormsApplication2.Properties.Resources.resources
 C:\Users\ima pro\Documents\GitHub\rastreabilidad\WindowsFormsApplication2\WindowsFormsApplication2\obj\Release\WindowsFormsApplication2.csproj.GenerateResource.Cache
+C:\Users\ima pro\Documents\GitHub\rastreabilidad\WindowsFormsApplication2\WindowsFormsApplication2\bin\Release\valeoappbeta.exe.manifest
+C:\Users\ima pro\Documents\GitHub\rastreabilidad\WindowsFormsApplication2\WindowsFormsApplication2\bin\Release\valeoappbeta.application
+C:\Users\ima pro\Documents\GitHub\rastreabilidad\WindowsFormsApplication2\WindowsFormsApplication2\obj\Release\valeoappbeta.exe.manifest
+C:\Users\ima pro\Documents\GitHub\rastreabilidad\WindowsFormsApplication2\WindowsFormsApplication2\obj\Release\valeoappbeta.application
