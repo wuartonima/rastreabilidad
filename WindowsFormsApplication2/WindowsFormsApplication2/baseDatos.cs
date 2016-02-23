@@ -65,7 +65,7 @@ namespace WindowsFormsApplication2
            
         }
 
-        public void filtrofecha(DataGridView tabla,string tabladb,string f1,string f2, string h1, string h2)
+        public void filtroFecha(DataGridView tabla,string tabladb,string f1,string f2, string h1, string h2)
         {
             string consulta="";
             con.Open();
@@ -83,7 +83,31 @@ namespace WindowsFormsApplication2
             con.Close();
         }
         
-
+        public bool verificarPass(string password){
+            
+            return consultarDato("usuario","contraseña","accesoValeo") == password;
+            
+        }
+        
+        public void cambioPassword(string passActual,string passNuevo){
+            
+            if (consultarDato("usuario","contraseña","accesoValeo") == passActual){
+                //Actualizar Registo
+            }
+            
+        }
+        
+        public void cambiarPass(string nuevoPass, string actualPass){
+            
+            con.Open();
+            
+            coman.CommandText =  "update usuario set contraseña = " + nuevoPass + "where contraseña = " + actualPass + "limit 1";
+            MySqlDataReader read;
+            read = coman.ExecuteReader();
+            
+            con.Close();
+            
+        }
 
     }
 }
