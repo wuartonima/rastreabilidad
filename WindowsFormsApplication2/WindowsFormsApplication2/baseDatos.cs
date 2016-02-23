@@ -89,13 +89,6 @@ namespace WindowsFormsApplication2
             
         }
         
-        public void cambioPassword(string passActual,string passNuevo){
-            
-            if (consultarDato("usuario","contraseña","accesoValeo") == passActual){
-                //Actualizar Registo
-            }
-            
-        }
         
         public void cambiarPass(string nuevoPass, string actualPass){
             
