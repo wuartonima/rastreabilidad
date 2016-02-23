@@ -102,9 +102,18 @@ namespace WindowsFormsApplication2
             
         }
 
+        public void borrar(string tabladb, string tipodato, string valor, string fecha) {
+
+            con.Open();
+
+            coman.CommandText = "delete from " + tabladb + " where " + tipodato + "= " + valor +"and fecha = " + fecha + " limit 1";
+            MySqlDataReader read;
+            read = coman.ExecuteReader();
+
+            con.Close();
+
+        }
+
     }
 }
 
-
-    }
-}

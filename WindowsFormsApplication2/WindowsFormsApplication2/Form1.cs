@@ -19,7 +19,7 @@ namespace WindowsFormsApplication2
     public partial class Form1 : MetroForm
     {
         #region variables
-        baseDatos basedatos = new baseDatos("Database=valeodv;Data Source=localhost;user Id=root;Password=ima1;");
+        baseDatos basedatos = new baseDatos("Database=valeodv;Data Source=192.168.0.21;user Id=alejandro;Password=ima1;");
         private static Socket _serverSocket;
         private static readonly List<Socket> _clientSockets = new List<Socket>();
         private const int _BUFFER_SIZE = 2048;
@@ -172,7 +172,7 @@ namespace WindowsFormsApplication2
 
         public bool[] consultar(string etiqueta, List<MetroFramework.Controls.MetroTextBox> lineatx,List<Button> lineabtn)
         {
-            bool[] result = { false, false,false };///result[0]= si existe etiqueta, result[1]=es ok?
+            bool[] result = { false, false,false };///result[0]= si existe etiqueta, result[1]=es ok?, result[2]=es primera?
             try {
                 result[0] = lineatx.Exists(element => element.Text.Contains(etiqueta));
                 if (result[0])

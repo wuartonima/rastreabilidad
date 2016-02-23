@@ -67,50 +67,78 @@ namespace WindowsFormsApplication2
                 if (spliteada[1].Contains("consulta")) { consulta(spliteada[0]); }
                 if (spliteada[1].Contains("registro")) { registro(spliteada[0], spliteada[2]); } }
         }
-        public void consulta(string etiqueta)
+        public void consulta(string etiqueta)//------------------------------------------------------------------------------------------------
         {
-            bool[] result = Form1.f1.consultar(etiqueta, Form1.f1.linea80, Form1.f1.linea80btn);
-            bool[] result2 = Form1.f1.consultar(etiqueta, Form1.f1.linea100, Form1.f1.linea100btn);
-            if (result[1]) {
-                prueva = true; resultado = true;
-            }
-            else
-            {
-                prueva = true; resultado = false;
 
-            }
+            bool[] est80 = Form1.f1.consultar(etiqueta, Form1.f1.linea80, Form1.f1.linea80btn);
+            bool[] est100 = Form1.f1.consultar(etiqueta, Form1.f1.linea100, Form1.f1.linea100btn);
 
+            if (est80[1]) { prueva = true; resultado = true;}
+            else { prueva = true; resultado = false;}
 
         }
-        public void registro(string etiqueta, string resultado)
-        {
+
+        public void registro(string etiqueta, string resultado)//------------------------------------------------------------------------------------------------
+        {//result[0]= existe etiqueta, result[1]=es ok, result[2]=es primera
 
             bool result = resultado.Contains("ok");
+
+            bool repitioPrueba = false;
+
+            bool[] est100 = Form1.f1.consultar(etiqueta, Form1.f1.linea100, Form1.f1.linea100btn);
+            if (est100[0] && est100[0]) { repitioPrueba = true; }
+
             Form1.f1.corrimiento(100, etiqueta, result);
 
             string sccm = basedatos.consultarDato("sccm", "sccms", etiqueta);
-            if (result) {
-                oklinea100++;
-                basedatos.insertarFila("piezasok", fecha.ToString("D").Replace("/", "-") + ","
-                                       + DateTime.Now.ToString("T") + "," + etiqueta + "," + sccm
-                                       + "," + "ok," + "ok," + "");
+
+
+            if (!repitioPrueba)//no repitio prueba
+            {
+                if (result)
+                {
+                    oklinea100++;
+                    basedatos.insertarFila("piezasok", fecha.ToString("D").Replace("/", "-") + ","
+                                           + DateTime.Now.ToString("T") + "," + etiqueta + "," + sccm
+                                           + "," + "ok," + "ok," + "");
+                }
+                else {
+                    noklinea100++;
+                    basedatos.insertarFila("piezasnook", fecha.ToString("D").Replace("/", "-") + ","
+                                            + DateTime.Now.ToString("T") + "," + etiqueta + "," + sccm
+                                            + "," + "ok," + "nok," + "nok");
+                }
             }
-            else {
-                noklinea100++;
-                basedatos.insertarFila("piezasnook", fecha.ToString("D").Replace("/", "-") + ","
-                                        + DateTime.Now.ToString("T") + "," + etiqueta + "," + sccm
-                                        + "," + "ok," + "nok," + "nok");
+            else
+            {
+                if (result)//repitio prueba y ahora es ok
+                {
+
+                    basedatos.borrar("piezasnook", "codigobarras", etiqueta, fecha.ToString("D").Replace("/", "-") + ","
+                                            );
+                    oklinea100++;
+                    basedatos.insertarFila("piezasok", fecha.ToString("D").Replace("/", "-") + ","
+                                           + DateTime.Now.ToString("T") + "," + etiqueta + "," + sccm
+                                           + "," + "ok," + "ok," + "");
+                }
             }
+           
 
 
         }
+
+
+
         public void show()
         { contador++;
             if (iterativo) { iterativo = false; } else { iterativo = true; }
             Form1.f1.corrimiento(80, contador.ToString(), iterativo);
         }
-        
 
+
+        }
+
+        }
 
 
         }
