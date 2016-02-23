@@ -11,6 +11,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
+using MetroFramework;
+using Microsoft.Office;
 
 namespace WindowsFormsApplication2
 {
@@ -26,19 +28,21 @@ namespace WindowsFormsApplication2
         public static string temp { get; set; }
         int contador = 0;
         public string anterior = "";
-       public List<MetroFramework.Controls.MetroTextBox> linea80 = new List<MetroFramework.Controls.MetroTextBox>();
+        public List<MetroFramework.Controls.MetroTextBox> linea80 = new List<MetroFramework.Controls.MetroTextBox>();
         public List<MetroFramework.Controls.MetroTextBox> linea100 = new List<MetroFramework.Controls.MetroTextBox>();
         public List<MetroFramework.Controls.MetroTextBox> linea110 = new List<MetroFramework.Controls.MetroTextBox>();
         public List<Button> linea80btn = new List<Button>();
         public List<Button> linea100btn = new List<Button>();
         public List<Button> linea110btn = new List<Button>();
+        public static Form1 f1;
+
         Prosesado logica;
         #endregion
         public Form1()
-        {
-            
-                InitializeComponent();
-                SetupServer();
+        {           
+            InitializeComponent();
+            SetupServer();
+            Form1.f1 = this;
        
         }
      
@@ -192,6 +196,43 @@ namespace WindowsFormsApplication2
             logica = new Prosesado();
         }
 
-   
+        private void button10_Click(object sender, EventArgs e)
+        {
+            logica.show();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            oklinea80.Text = logica.oklinea80.ToString();
+            noklinea80.Text = logica.noklinea80.ToString();
+            oklinea100.Text = logica.oklinea100.ToString();
+            noklinea100.Text = logica.noklinea100.ToString();
+            oklinea110.Text = logica.oklinea110.ToString(); 
+
+         
+        }
+        public void excel(DataGridView dataGridView1)
+        {
+            dataGridView1.SelectAll();
+            DataObject dataObj = dataGridView1.GetClipboardContent();
+            if (dataObj != null)
+                Clipboard.SetDataObject(dataObj);
+            Microsoft.Office.Interop.Excel.Application xlexcel;
+            Microsoft.Office.Interop.Excel.Workbook xlWorkBook;
+            Microsoft.Office.Interop.Excel.Worksheet xlWorkSheet;
+            object misValue = System.Reflection.Missing.Value;
+            xlexcel = new Microsoft.Office.Interop.Excel.Application();
+            xlexcel.Visible = true;
+            xlWorkBook = xlexcel.Workbooks.Add(misValue);
+            xlWorkSheet = (Microsoft.Office.Interop.Excel.Worksheet)xlWorkBook.Worksheets.get_Item(1);
+            Microsoft.Office.Interop.Excel.Range CR = (Microsoft.Office.Interop.Excel.Range)xlWorkSheet.Cells[1, 1];
+            CR.Select();
+            xlWorkSheet.PasteSpecial(CR, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, true);
+        }
+
+        private void metroButton2_Click(object sender, EventArgs e)
+        {
+            excel(metroGrid1);
+        }
     }
 }

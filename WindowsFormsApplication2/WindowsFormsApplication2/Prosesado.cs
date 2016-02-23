@@ -12,17 +12,20 @@ namespace WindowsFormsApplication2
     {
         baseDatos basedatos = new baseDatos("Database=valeodv;Data Source=localhost;user Id=root;Password=ima1;");
         DateTime fecha = DateTime.Today;
-        Form1 main = new Form1();
+
         public List<MetroFramework.Controls.MetroTextBox> linea80 = new List<MetroFramework.Controls.MetroTextBox>();
         public List<MetroFramework.Controls.MetroTextBox> linea100 = new List<MetroFramework.Controls.MetroTextBox>();
         public List<MetroFramework.Controls.MetroTextBox> linea110 = new List<MetroFramework.Controls.MetroTextBox>();
         public List<Button> linea80btn = new List<Button>();
         public List<Button> linea100btn = new List<Button>();
         public List<Button> linea110btn = new List<Button>();
+        public int oklinea80 = 0, noklinea80 = 0, oklinea100 = 0, noklinea100 = 0, oklinea110 = 0;
+        int contador = 0;
+        bool iterativo = false;
         public bool resultado { get; set; }
         public bool prueva { get; set; }
         public Prosesado()
-        { 
+        {
             resultado = false;
             prueva = false;
         }
@@ -39,59 +42,61 @@ namespace WindowsFormsApplication2
             string[] spliteada = comando.Split(',');
             if (spliteada[0].Contains("error")) { MessageBox.Show("etiqueta no leida"); }
             else {
-                if (spliteada[1].Contains("nok")) { pl1nok(spliteada[0], spliteada[2]); }
+                if (spliteada[1].Contains("nok")) { pl1nok(spliteada[0], spliteada[2]); noklinea80++; }
                 else {
-                    
-                    main.corrimiento(80, spliteada[0], true);
-                    basedatos.insertarFila("sccm", spliteada[0] + "," + spliteada[2] + "," 
+                    oklinea80++;
+                    Form1.f1.corrimiento(80, spliteada[0], true);
+                    basedatos.insertarFila("sccm", spliteada[0] + "," + spliteada[2] + ","
                                             + fecha.ToString("D").Replace("/", "-"));
-                   
+
                 }
             }
 
         }
         public void pl1nok(string etiqueta, string fuga)
         {
-           main.corrimiento(80, etiqueta, false);
-            basedatos.insertarFila("piezasnook", fecha.ToString("D").Replace("/", "-") + "," 
-                                   + DateTime.Now.ToString("T") + "," + etiqueta + "," + fuga 
+            Form1.f1.corrimiento(80, etiqueta, false);
+            basedatos.insertarFila("piezasnook", fecha.ToString("D").Replace("/", "-") + ","
+                                   + DateTime.Now.ToString("T") + "," + etiqueta + "," + fuga
                                    + "," + "nok," + "nok," + "nok");
         }
         public void plc_2(string comando)
         {
             string[] spliteada = comando.Split(',');
-            if (spliteada[0].Contains("error")) { MessageBox.Show("etiqueta no leida linea 100"); } else { 
-            if (spliteada[1].Contains("consulta")) { consulta(spliteada[0]);}
-            if (spliteada[1].Contains("registro")) { registro(spliteada[0],spliteada[2]); }}
+            if (spliteada[0].Contains("error")) { MessageBox.Show("etiqueta no leida linea 100"); } else {
+                if (spliteada[1].Contains("consulta")) { consulta(spliteada[0]); }
+                if (spliteada[1].Contains("registro")) { registro(spliteada[0], spliteada[2]); } }
         }
         public void consulta(string etiqueta)
         {
-            bool[] result = main.consultar(etiqueta,main.linea80,main.linea80btn) ;
-            Form1.
-           bool[] result2 = main.consultar(etiqueta, main.linea100, main.linea100btn);
-            if (result[1])  {
-               prueva =true;resultado = true;
-           }
+            bool[] result = Form1.f1.consultar(etiqueta, Form1.f1.linea80, Form1.f1.linea80btn);
+            bool[] result2 = Form1.f1.consultar(etiqueta, Form1.f1.linea100, Form1.f1.linea100btn);
+            if (result[1]) {
+                prueva = true; resultado = true;
+            }
             else
             {
-                prueva =true; resultado = false;
+                prueva = true; resultado = false;
 
             }
+
 
         }
-        public void registro(string etiqueta,string resultado)
+        public void registro(string etiqueta, string resultado)
         {
-            
+
             bool result = resultado.Contains("ok");
-            main.corrimiento(100, etiqueta, result);
+            Form1.f1.corrimiento(100, etiqueta, result);
 
             string sccm = basedatos.consultarDato("sccm", "sccms", etiqueta);
-            if (result){
+            if (result) {
+                oklinea100++;
                 basedatos.insertarFila("piezasok", fecha.ToString("D").Replace("/", "-") + ","
                                        + DateTime.Now.ToString("T") + "," + etiqueta + "," + sccm
-                                       + "," + "ok," + "ok," + "");          
+                                       + "," + "ok," + "ok," + "");
             }
-            else{
+            else {
+                noklinea100++;
                 basedatos.insertarFila("piezasnook", fecha.ToString("D").Replace("/", "-") + ","
                                         + DateTime.Now.ToString("T") + "," + etiqueta + "," + sccm
                                         + "," + "ok," + "nok," + "nok");
@@ -100,9 +105,17 @@ namespace WindowsFormsApplication2
 
         }
         public void show()
-        {
-            MessageBox.Show("todo ok");
+        { contador++;
+            if (iterativo) { iterativo = false; } else { iterativo = true; }
+            Form1.f1.corrimiento(80, contador.ToString(), iterativo);
         }
-     
+        
+
+
+
+        }
+
+
+
     }
-}
+

@@ -90,14 +90,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="valeoappbeta.exe" size="290760">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="valeoappbeta.exe" size="295880">
       <assemblyIdentity name="valeoappbeta" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Za9d+sQqo/dVJIuj0H65h7BIoTCu1OwNYfjvI6ky7YE=</dsig:DigestValue>
+        <dsig:DigestValue>8KoA8lTZoR0Hfahog0uVBTQ5mAdrCyBk2+K0OCPs87k=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

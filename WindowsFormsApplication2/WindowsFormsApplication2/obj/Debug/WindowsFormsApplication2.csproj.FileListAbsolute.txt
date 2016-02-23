@@ -16,3 +16,4 @@ C:\Users\ricardo\Downloads\Nueva carpeta\rastreabilidad-master\WindowsFormsAppli
 C:\Users\ricardo\Downloads\Nueva carpeta\rastreabilidad-master\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.csproj.GenerateResource.Cache
 C:\Users\ricardo\Downloads\Nueva carpeta\rastreabilidad-master\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\valeoappbeta.exe.manifest
 C:\Users\ricardo\Downloads\Nueva carpeta\rastreabilidad-master\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\valeoappbeta.application
+C:\Users\ricardo\Downloads\Nueva carpeta\rastreabilidad-master\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.csproj.ResolveComReference.cache
