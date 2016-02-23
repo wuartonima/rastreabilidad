@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MetroFramework.dll" size="333824">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MetroFramework.dll" size="334336">
       <assemblyIdentity name="MetroFramework" version="1.3.5.0" publicKeyToken="5F91A84759BF584A" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>r3peR7MjTe1itwumNatLIdPipSaQ6yrvO9+YTP3vsZQ=</dsig:DigestValue>
+        <dsig:DigestValue>jf7WlYJxPtT/xzLmcIjKObEGtFC14ixEjgjpWemvWE4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -61,7 +61,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>PSAIZJpRFEmK+SayO/TcF3vBCaILTJbEzo8scX7f4Zk=</dsig:DigestValue>
+        <dsig:DigestValue>l96bxvEwQWZn9qEQXt+VpYiY6dP3BkUUj70EkP3vfZ0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -73,7 +73,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>ivBHhhFokG5Iwkp/+TXpGE/4Beopd7DAIR4dyQPAJPI=</dsig:DigestValue>
+        <dsig:DigestValue>iONsFokYEFfDVNDziR8vy/sRmL7rSHLt7cggte/DS6k=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -90,14 +90,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="valeoappbeta.exe" size="287688">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="valeoappbeta.exe" size="290760">
       <assemblyIdentity name="valeoappbeta" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>ekkw62isvFrutyOZGPSGiVm+xmDnO9QaIHKPNC4sdLw=</dsig:DigestValue>
+        <dsig:DigestValue>Za9d+sQqo/dVJIuj0H65h7BIoTCu1OwNYfjvI6ky7YE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

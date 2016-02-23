@@ -5,12 +5,14 @@ using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 using System.Data;
+using System.Windows.Forms;
 
 namespace WindowsFormsApplication2
 {
     class baseDatos
     {
         public string conexion {get; set;}
+        public int contador = 0;
         MySqlConnection con;
         MySqlCommand coman = new MySqlCommand();
 
@@ -57,9 +59,28 @@ namespace WindowsFormsApplication2
             {
                 dato = read.GetString(tipodato);
             }
-            return dato;
             con.Close();
+            return dato;
            
+           
+        }
+
+        public void filtrofecha(DataGridView tabla,string tabladb,string f1,string f2, string h1, string h2)
+        {
+            string consulta="";
+            con.Open();
+            try
+            {
+                consulta = "SELECT * FROM " + tabladb + " WHERE fecha between " +"'"+f1+ "'" + " and " + "'" + f2 + "'" + "AND hora between " + "'" + h1 + "'" + " and " + "'" + h2 + "'" + ";";
+               
+                MySqlDataAdapter data = new MySqlDataAdapter(consulta, con);
+                DataSet ds = new DataSet();
+                data.Fill(ds, tabladb);
+                tabla.DataSource = ds;
+                tabla.DataMember = tabladb;
+            }
+            catch {  }
+            con.Close();
         }
         
 

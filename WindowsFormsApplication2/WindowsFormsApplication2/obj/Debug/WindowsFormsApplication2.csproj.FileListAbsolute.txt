@@ -1,31 +1,18 @@
-c:\users\ima pro\documents\visual studio 2015\Projects\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.exe.config
-c:\users\ima pro\documents\visual studio 2015\Projects\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.exe
-c:\users\ima pro\documents\visual studio 2015\Projects\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.pdb
-c:\users\ima pro\documents\visual studio 2015\Projects\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\MetroFramework.Design.dll
-c:\users\ima pro\documents\visual studio 2015\Projects\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\MetroFramework.dll
-c:\users\ima pro\documents\visual studio 2015\Projects\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\MetroFramework.Fonts.dll
-c:\users\ima pro\documents\visual studio 2015\Projects\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.csprojResolveAssemblyReference.cache
-c:\users\ima pro\documents\visual studio 2015\Projects\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Form1.resources
-c:\users\ima pro\documents\visual studio 2015\Projects\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Properties.Resources.resources
-c:\users\ima pro\documents\visual studio 2015\Projects\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.csproj.GenerateResource.Cache
-c:\users\ima pro\documents\visual studio 2015\Projects\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.exe
-c:\users\ima pro\documents\visual studio 2015\Projects\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.pdb
-c:\users\ima pro\documents\visual studio 2015\Projects\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\MySql.Data.dll
-C:\Users\ima pro\Documents\GitHub\rastreabilidad\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\valeoappbeta.exe.config
-C:\Users\ima pro\Documents\GitHub\rastreabilidad\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.csprojResolveAssemblyReference.cache
-C:\Users\ima pro\Documents\GitHub\rastreabilidad\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Form1.resources
-C:\Users\ima pro\Documents\GitHub\rastreabilidad\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Form2.resources
-C:\Users\ima pro\Documents\GitHub\rastreabilidad\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Properties.Resources.resources
-C:\Users\ima pro\Documents\GitHub\rastreabilidad\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.csproj.GenerateResource.Cache
-C:\Users\ima pro\Documents\GitHub\rastreabilidad\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\valeoappbeta.exe.manifest
-C:\Users\ima pro\Documents\GitHub\rastreabilidad\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\valeoappbeta.application
-C:\Users\ima pro\Documents\GitHub\rastreabilidad\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\valeoappbeta.exe
-C:\Users\ima pro\Documents\GitHub\rastreabilidad\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\valeoappbeta.pdb
-C:\Users\ima pro\Documents\GitHub\rastreabilidad\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\MetroFramework.Design.dll
-C:\Users\ima pro\Documents\GitHub\rastreabilidad\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\MetroFramework.dll
-C:\Users\ima pro\Documents\GitHub\rastreabilidad\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\MetroFramework.Fonts.dll
-C:\Users\ima pro\Documents\GitHub\rastreabilidad\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\MySql.Data.dll
-C:\Users\ima pro\Documents\GitHub\rastreabilidad\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\valeoappbeta.exe.manifest
-C:\Users\ima pro\Documents\GitHub\rastreabilidad\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\valeoappbeta.application
-C:\Users\ima pro\Documents\GitHub\rastreabilidad\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\valeoappbeta.exe
-C:\Users\ima pro\Documents\GitHub\rastreabilidad\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\valeoappbeta.pdb
+C:\Users\ricardo\Downloads\Nueva carpeta\rastreabilidad-master\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\valeoappbeta.exe.config
+C:\Users\ricardo\Downloads\Nueva carpeta\rastreabilidad-master\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\valeoappbeta.exe
+C:\Users\ricardo\Downloads\Nueva carpeta\rastreabilidad-master\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\valeoappbeta.pdb
+C:\Users\ricardo\Downloads\Nueva carpeta\rastreabilidad-master\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\valeoappbeta.exe.manifest
+C:\Users\ricardo\Downloads\Nueva carpeta\rastreabilidad-master\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\valeoappbeta.application
+C:\Users\ricardo\Downloads\Nueva carpeta\rastreabilidad-master\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\valeoappbeta.exe
+C:\Users\ricardo\Downloads\Nueva carpeta\rastreabilidad-master\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\valeoappbeta.pdb
+C:\Users\ricardo\Downloads\Nueva carpeta\rastreabilidad-master\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\MetroFramework.Design.dll
+C:\Users\ricardo\Downloads\Nueva carpeta\rastreabilidad-master\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\MetroFramework.dll
+C:\Users\ricardo\Downloads\Nueva carpeta\rastreabilidad-master\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\ricardo\Downloads\Nueva carpeta\rastreabilidad-master\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\MySql.Data.dll
+C:\Users\ricardo\Downloads\Nueva carpeta\rastreabilidad-master\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.csprojResolveAssemblyReference.cache
+C:\Users\ricardo\Downloads\Nueva carpeta\rastreabilidad-master\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Form1.resources
+C:\Users\ricardo\Downloads\Nueva carpeta\rastreabilidad-master\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Form2.resources
+C:\Users\ricardo\Downloads\Nueva carpeta\rastreabilidad-master\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Properties.Resources.resources
+C:\Users\ricardo\Downloads\Nueva carpeta\rastreabilidad-master\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.csproj.GenerateResource.Cache
+C:\Users\ricardo\Downloads\Nueva carpeta\rastreabilidad-master\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\valeoappbeta.exe.manifest
+C:\Users\ricardo\Downloads\Nueva carpeta\rastreabilidad-master\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\valeoappbeta.application
